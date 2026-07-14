@@ -716,3 +716,54 @@ nav a.active{
     border:2px solid #2563eb;
     box-shadow:0 0 12px rgba(37,99,235,.2);
 }
+/* ===== Dark Mode ===== */
+
+body.dark{
+    background:#0f172a;
+    color:#fff;
+}
+
+body.dark .hero,
+body.dark .about,
+body.dark .skills,
+body.dark .projects,
+body.dark .education,
+body.dark .contact{
+    background:#0f172a;
+    color:#fff;
+}
+
+body.dark header{
+    background:#1e293b;
+}
+
+body.dark p,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark span{
+    color:#fff;
+}
+
+body.dark .project-card,
+body.dark .edu-card,
+body.dark .contact-info,
+body.dark .contact-form{
+    background:#1e293b;
+    color:#fff;
+}
+
+body.dark input,
+body.dark textarea{
+    background:#334155;
+    color:#fff;
+    border:1px solid #475569;
+}
+
+body.dark nav a{
+    color:#fff;
+}
+
+body.dark footer{
+    background:#020617;
+}
