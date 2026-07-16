@@ -867,3 +867,9 @@ nav {
         display:flex;
     }
 }
+@media (max-width:768px){
+    .profile-img{
+        width:180px;
+        height:180px;
+    }
+}
