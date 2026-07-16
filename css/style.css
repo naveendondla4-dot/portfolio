@@ -847,3 +847,14 @@ nav {
   justify-content: center;
   gap: 8px;
 }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+nav a {
+  font-size: 14px;
+  margin: 0 5px;
+}
