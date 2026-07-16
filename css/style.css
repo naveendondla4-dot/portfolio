@@ -858,3 +858,36 @@ nav a {
   font-size: 14px;
   margin: 0 5px;
 }
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 200px;
+    padding: 20px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+}
