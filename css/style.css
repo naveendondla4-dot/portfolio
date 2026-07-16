@@ -841,3 +841,9 @@ body.dark footer{
         padding:6px 10px;
     }
 }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
