@@ -891,3 +891,11 @@ nav {
     display: flex;
   }
 }
+#menu {
+  display: none;
+}
+
+#menu.show {
+  display: flex;
+  flex-direction: column;
+            }
