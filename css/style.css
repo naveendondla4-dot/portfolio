@@ -869,7 +869,7 @@ nav {
 }
 @media (max-width:768px){
     .profile-img{
-        width:110px;
-        height:110px;
+        width:120px !important;
+        height:120px !important;
     }
 }
