@@ -1,33 +1,27 @@
-const CACHE_NAME = "my-website-v1";
+const CACHE_NAME = "portfolio-v1";
 
 const filesToCache = [
-  "/",
-  "/index.html",
-  "/style.css",
-  "/script.js",
-  "/manifest.json"
+  "/portfolio/",
+  "/portfolio/index.html",
+  "/portfolio/manifest.json",
+  "/portfolio/css/style.css",
+  "/portfolio/js/app.js",
+  "/portfolio/documents/favicon.jpg",
+  "/portfolio/documents/100.jpg"
 ];
 
+// Install Service Worker
 self.addEventListener("install", (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then((cache) => {
-        return cache.addAll(filesToCache);
-      })
+    caches.open(CACHE_NAME).then((cache) => {
+      console.log("Caching files...");
+      return cache.addAll(filesToCache);
+    })
   );
+  self.skipWaiting();
 });
 
-
-self.addEventListener("fetch", (event) => {
-  event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        return response || fetch(event.request);
-      })
-  );
-});
-
-
+// Activate Service Worker
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches.keys().then((cacheNames) => {
@@ -38,6 +32,16 @@ self.addEventListener("activate", (event) => {
           }
         })
       );
+    })
+  );
+  self.clients.claim();
+});
+
+// Fetch Requests
+self.addEventListener("fetch", (event) => {
+  event.respondWith(
+    caches.match(event.request).then((response) => {
+      return response || fetch(event.request);
     })
   );
 });
