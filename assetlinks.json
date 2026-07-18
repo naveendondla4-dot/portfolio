@@ -1,8 +1,0 @@
-[{
-      "relation": ["delegate_permission/common.handle_all_urls"],
-      "target": {
-        "namespace": "android_app",
-        "package_name": "io.github.naveendondla4_dot.twa",
-        "sha256_cert_fingerprints": ["9F:E4:66:D3:7E:13:AC:CC:2C:CD:92:18:A6:AF:6F:43:35:BC:02:64:7E:14:F2:8E:C9:72:89:B4:86:5C:DA:EC"]
-      }
-    }]
