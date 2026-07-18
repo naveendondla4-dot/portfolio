@@ -2,6 +2,8 @@
   "name": "Naveen Portfolio",
   "short_name": "Naveen",
   "description": "Naveen Portfolio Website"
+  "id": "/portfolio/",
+  "lang": "en",
   "start_url": "/portfolio/",
   "scope": "/portfolio/",
   "display": "standalone",
