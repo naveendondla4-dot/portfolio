@@ -1,6 +1,7 @@
 {
   "name": "Naveen Portfolio",
   "short_name": "Naveen",
+  "description": "Naveen Portfolio Website"
   "start_url": "/portfolio/",
   "scope": "/portfolio/",
   "display": "standalone",
