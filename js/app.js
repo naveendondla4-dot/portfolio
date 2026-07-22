@@ -110,6 +110,7 @@ menuBtn.addEventListener("click", function () {
   menu.classList.toggle("show");
 });
 document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    console.log("Form Submitted");
 
     e.preventDefault();
 
