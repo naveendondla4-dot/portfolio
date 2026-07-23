@@ -146,3 +146,4 @@ document.getElementById("contactForm").addEventListener("submit", async function
     }
 
 });
+alert("Latest app.js loaded");
