@@ -862,6 +862,9 @@ nav {
         padding:15px;
         border-radius:10px;
     }
+    body.dark .navbar{
+    background:#1e293b;
+    }
 
     .navbar.show{
         display:flex;
@@ -869,8 +872,8 @@ nav {
 }
 @media (max-width:768px){
     .profile-img{
-        width:180px !important;
-        height:180px !important;
+        width:210px !important;
+        height:210px !important;
         margin-top: 20px;
     }
 }
