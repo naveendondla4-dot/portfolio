@@ -876,8 +876,8 @@ nav {
 }
 @media (max-width:768px){
     .profile-img{
-        width:350px !important;
-        height:350px !important;
+        width:300px !important;
+        height:300px !important;
         margin-top: 20px;
     }
 }
