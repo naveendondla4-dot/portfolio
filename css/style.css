@@ -863,7 +863,7 @@ nav {
         border-radius:10px;
     }
 
-    .navbar.active{
+    .navbar.show{
         display:flex;
     }
 }
